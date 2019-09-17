@@ -2,7 +2,7 @@ name: camera_permission
 description: check and request the permission for the camera on android and ios
 version: 0.0.1
 author: Tobias Gubo <tobias.gubo@gmx.de>
-homepage: tobias-gubo.com
+homepage: https://github.com/tobiasgubo/flutter_camera_permission
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
