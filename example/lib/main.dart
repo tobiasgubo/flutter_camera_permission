@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:camera_permission/src/camera_permission.dart';
+import 'package:camera_permission/camera_permission.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,32 +12,23 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     super.initState();
-    initPlatformState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      platformVersion = await CameraPermission.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
+  void _checkCameraPermission() async {
+    PermissionStatus permissionStatus = await CameraPermission().checkPermissionStatus();
+    print(permissionStatus);
+  }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
+  void _requestCameraPermission() async {
+    PermissionStatus permissionStatus = await CameraPermission().requestPermission();
+    print(permissionStatus);
+  }
 
-    setState(() {
-      _platformVersion = platformVersion;
-    });
+  void _openSettings() {
+    CameraPermission().openAppSettings();
   }
 
   @override
@@ -48,7 +39,24 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _checkCameraPermission,
+                child: Text("Check Camera Permission"),
+              ),
+              RaisedButton(
+                onPressed: _requestCameraPermission,
+                child: Text("Request Camera Permission"),
+              ),
+              RaisedButton(
+                onPressed: _openSettings,
+                child: Text("Open Settings"),
+              ),
+            ]
+          ),
         ),
       ),
     );
