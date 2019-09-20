@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/camera_permission.iml" filepath="$PROJECT_DIR$/camera_permission.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/camera_permission_android.iml" filepath="$PROJECT_DIR$/android/camera_permission_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example/android/camera_permission_example_android.iml" filepath="$PROJECT_DIR$/example/android/camera_permission_example_android.iml" />
     </modules>
   </component>
 </project>
