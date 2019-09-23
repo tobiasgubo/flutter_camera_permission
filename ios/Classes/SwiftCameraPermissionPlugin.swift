@@ -67,7 +67,22 @@ public class SwiftCameraPermissionPlugin: NSObject, FlutterPlugin {
         }
     }
     
-    private func openAppSettings(result: FlutterResult) {
-        
+    private func openAppSettings(result: @escaping FlutterResult) {
+        if #available(iOS 10, *) {
+            
+            let url = URL(string: UIApplicationOpenSettingsURLString)!
+            UIApplication.shared.open(url, options: [:], completionHandler: {
+                success in result(NSNumber(value: success))
+            })
+            
+        } else if #available(iOS 8.0, *) {
+            var success: Bool? = nil
+            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                success = UIApplication.shared.openURL(url)
+            }
+            result(NSNumber(value: success ?? false))
+        } else {
+            result(NSNumber(value: false))
+        }
     }
 }

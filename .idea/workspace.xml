@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf745704-d88f-4d68-bd4b-f8e59a2a6f1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ios/Classes/PermissionEnums.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/CameraPermissionPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CameraPermissionPlugin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/CameraPermissionPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CameraPermissionPlugin.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftCameraPermissionPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftCameraPermissionPlugin.swift" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/camera_permission.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="285">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -63,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftCameraPermissionPlugin.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -250,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568986882304</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented checkPermissionStatus for ios">
+      <created>1569251613093</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569251613093</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -273,7 +277,7 @@
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32962447" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49939758" weight="0.32962447" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.49939758" visible="true" weight="0.32962447" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
@@ -283,7 +287,7 @@
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3296617" />
       <window_info anchor="bottom" id="Statistic" order="10" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32962447" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32962447" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -296,7 +300,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Implemented android functionality" />
     <MESSAGE value="Added some ios code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some ios code" />
+    <MESSAGE value="Implemented checkPermissionStatus for ios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented checkPermissionStatus for ios" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
@@ -375,14 +380,14 @@
     <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftCameraPermissionPlugin.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/camera_permission.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="285">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
