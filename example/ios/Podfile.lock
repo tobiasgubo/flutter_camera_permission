@@ -5,13 +5,13 @@ PODS:
 
 DEPENDENCIES:
   - camera_permission (from `.symlinks/plugins/camera_permission/ios`)
-  - Flutter (from `.symlinks/flutter/ios`)
+  - Flutter (from `.symlinks/flutter/ios-release`)
 
 EXTERNAL SOURCES:
   camera_permission:
     :path: ".symlinks/plugins/camera_permission/ios"
   Flutter:
-    :path: ".symlinks/flutter/ios"
+    :path: ".symlinks/flutter/ios-release"
 
 SPEC CHECKSUMS:
   camera_permission: 37c99fb035d44d0df6bbeab05684f99d6f3cd1d3
