@@ -1,4 +1,4 @@
-package android.src.main.java.com.tobiasgubo.camera_permission;
+package com.tobiasgubo.camera_permission;
 
 import android.Manifest;
 import android.content.Context;
